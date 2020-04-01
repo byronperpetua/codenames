@@ -12,8 +12,8 @@ model = pd.read_csv('numberbatch-en-19.08.txt.gz',
 model = model.loc[model.index.notnull(), :]
 model.to_pickle('numberbatch.gz')
 
-# https://github.com/hermitdave/FrequencyWords
-freq = pd.read_csv('word_freq.txt',
+# https://github.com/hermitdave/FrequencyWords/tree/master/content/2016/en
+freq = pd.read_csv('en_full.txt',
                    delimiter=' ',
                    header=None,
                    index_col=0,
